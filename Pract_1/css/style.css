@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* MAIN */
+
+.main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(31, 31, 31);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 15px;
+    height: 2050px;
+}
+
+.content {
+    width: 1740px;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.text1 ol {
+    padding-left: 820px;
+}
+
+.text1 li {
+    padding-left: 10px;
+}
+
+.text2 {
+    margin-top: 10px;
+}
+
+.text3 {
+    margin-top: 20px;
+}
+
+.text3 ol {
+    margin-left: 25px;
+}
+
+.text3 ul {
+    margin-left: 50px;
+}
+
+.text4 {
+    text-align: center;
+}
+
+.text4 img {
+    padding-left: 100px;
+}
+
+.text4 h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+}
+
+.text4 #find {
+    margin-right: 90px;
+}
+
+
+/* ARROWS */
+
+.content,
+.arrows {
+    float: left;
+}
+
+.main .arrows #down-arrow {
+    margin-bottom: 1930px;
+}
+
+
+/* FOOTER */
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.hr-white {
+    height: 0;
+    border: none;
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.made_by {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.call,
+.mail {
+    display: inline;
+}
+
+.contacts a {
+    color: white;
+}
+
+.contacts img {
+    height: 40px;
+    width: 40px;
+}
+
+.contacts .mail {
+    margin-left: 50px;
+}
