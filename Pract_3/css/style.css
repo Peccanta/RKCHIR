@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN */
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(31, 31, 31);
+    padding-top: 120px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 15px;
+    height: 1650px;
+}
+
+.content {
+    width: 1740px;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.text1 ol {
+    padding-left: 820px;
+}
+
+.text1 li {
+    padding-left: 10px;
+}
+
+
+/* POSITION EXAMPLES */
+
+.pos_exp {
+    border: 1px solid white;
+    margin: 1rem;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    display: grid;
+}
+
+.pos_exp div {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), white);
+    border: 2px dashed black;
+    height: 40px;
+    margin: inherit;
+    width: 100px;
+    top: 81px;
+    left: 71px;
+    margin-left: 46%;
+}
+
+.pos_exp .relative {
+    background: linear-gradient (50deg, black, white);
+    position: relative;
+}
+
+.pos_exp .absolute {
+    background: rgb(255, 94, 0);
+    position: absolute;
+}
+
+.pos_exp .sticky {
+    background: rgb(18, 141, 45);
+    position: sticky;
+    top: 300px;
+}
+
+.text4 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.text4 img {
+    padding-left: 100px;
+}
+
+.text4 h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+}
+
+.text4 #find {
+    margin-right: 90px;
+}
+
+
+/* ARROWS */
+
+.content,
+.arrows {
+    float: left;
+}
+
+main .arrows #down-arrow {
+    position: fixed;
+    top: 14%;
+}
+
+main .arrows #up-arrow {
+    position: fixed;
+    top: 93%;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <title>Pract_4</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="images/label.png" heialt="Logo">
+        <h1>ПРАКТИЧЕСКАЯ РАБОТА №4</h1>
+        <br>
+        <nav>
+            <a href="index.html#services">ОПИСАНИЕ</a>
+            <a href="index.html#games">СПИСОК</a>
+            <a href="index.html#choice">ВЫБОР</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTENT -->
+        <div class="content">
+
+            <h2>Введите свои данные</h2>
+            <div class="form1">
+                <form action="" method="get">
+                    <p>
+                        <label for="name">Имя:</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label for="suname">Фамилия:</label>
+                        <input type="text" name="suname" id="suname" required>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Укажите пол:</legend>
+                            <label>
+                                <input type="radio" name="pol" value="male" id="male">М
+                            </label>
+                            <label id="female">
+                                <input type="radio" name="pol" value="female" id="female">Ж
+                            </label>
+                        </fieldset>
+                    </p>
+                    <p>
+                        <label for="tel">Телефон:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+7(999)999-99-99" pattern="[0-9]" required>
+                    </p>
+                    <p>
+                        <label for="email">Почта:</label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.ru" required>
+                    </p>
+                    <p>
+                        <label for="city">Город:</label>
+                        <select name="city" id="city" size="1" required>
+                            <option value="">Выберите город</option>
+                            <option value="msk">Москва</option>
+                            <option value="tomsk">Томск</option>
+                            <option value="cheb">Чебоксары</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="date">Дата рождения:&nbsp;&nbsp;</label><br>
+                        <input type="datetime-local" name="date" id="date" min="1900-01-01  23:59" max="2022-10-10 23:59" required>
+                    </p>
+                    <p>
+                        <label for="file">Загрузить фото:&nbsp;&nbsp;</label><br>
+                        <input type="file" name="file" id="file">
+                    </p>
+                    <p>
+                        <label for="about">Расскажите о себе:&nbsp;&nbsp;</label><br>
+                        <textarea name="about" id="about" cols="30" rows="10" maxlength="300" minlength="10" placeholder="Пишите..." required></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" name="submit" id="submit">
+                    </p>
+                </form>
+            </div>
+
+            <h2>Авторизация</h2>
+            <div class="form2">
+                <form action="" method="get">
+                    <p>
+                        <label for="name">Логин:</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label for="pass">Пароль:</label>
+                        <input type="password" name="pass" id="pass" required>
+                    </p>
+                    <p>
+                        <label for="checkbox">Запомнить</label>
+                        <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    </p>
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+
+            <div class="vidos">
+                <video controls poster="images/video.jpg" preload="none" width="100%" height="auto">
+                <source src="images/video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <!-- UP AND DOWN ARROWS -->
+        <aside class="arrows">
+            <a href="index.html#down"><img src="images/down-arrow.png" height="50px" width="50px" border="0" alt="Down" id="down-arrow"></a>
+            <br>
+            <a href="index.html"><img src="images/up-arrow.png" height="50px" width="50px" border="0" alt="Up" id="up-arrow"></a>
+        </aside>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <hr class="hr-white">
+        <div class="made_by">
+            <p id="down"><b>MADE BY:</b><br><address>ЗАСУХИН А.Д.</address></p>
+        </div>
+        <!-- CONTACTS -->
+        <div class="contacts">
+            <!-- PHONE -->
+            <div class="call">
+                <a href="tel:79777360332"><img src="images/phone.png" border="0" alt="Phone"></a>
+            </div>
+            <!-- MAIL -->
+            <div class="mail">
+                <a href="mailto:darkreek@mail.com"><img src="images/mail.png" border="0" alt="Email"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

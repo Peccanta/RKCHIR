@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN */
+
+
+/* Для ширины 1000 пикселей и меньше */
+
+@media screen and (max-width: 1000px) {
+    main {
+        font-size: calc(24px - 20%) !important;
+    }
+    .flexB {
+        width: 100% !important;
+    }
+    .flexC {
+        width: 100% !important;
+    }
+    .flexD {
+        width: 46% !important;
+    }
+    .flexE {
+        width: 46% !important;
+    }
+    .gallery img {
+        max-width: 600px !important;
+        max-height: 400px !important;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .gallery img {
+        max-width: 100% !important;
+        max-height: 300px !important;
+    }
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-size: 24px;
+    padding-top: calc(5% + 70px);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* FLEX */
+
+.content {
+    text-align: center;
+    font-size: calc(100% + 50px);
+    line-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.flexA {
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+.flexB {
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    width: 76.1%;
+}
+
+.flexC {
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    width: 21%;
+}
+
+.flexD {
+    background-color: yellow;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    width: 29.1%;
+}
+
+.flexE {
+    background-color: peru;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+    width: 68%;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.photo1 {
+    border-radius: 20px;
+}
+
+.photo11 {
+    border-radius: 20px;
+}
+
+.photo2 {
+    border-radius: 20px;
+}
+
+.photo3 {
+    border-radius: 20px;
+}
+
+.photo4 {
+    border-radius: 20px;
+}
+
+.photo5 {
+    border-radius: 20px;
+}
+
+.photo6 {
+    border-radius: 20px;
+}
+
+.gallery img {
+    border-radius: 20px;
+    height: 500px;
+    max-width: 900px;
+}
