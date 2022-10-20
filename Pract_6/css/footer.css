@@ -1,0 +1,43 @@
+/* FOOTER */
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    font-size: calc(1rem + 0.5vw);
+    padding-bottom: 0.5%;
+    width: 100%;
+}
+
+.hr-white {
+    height: 0;
+    border: none;
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.made_by {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.call,
+.mail {
+    display: inline;
+}
+
+.contacts a {
+    color: white;
+}
+
+.contacts img {
+    width: calc(1rem + 2vw);
+}
+
+.contacts .mail {
+    margin-left: 5%;
+}
