@@ -1,0 +1,134 @@
+/* FOOTER */
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    font-size: calc(1rem + 0.3vw);
+    padding-bottom: 0.5%;
+    width: 100%;
+}
+
+.hr-white {
+    height: 0;
+    border: none;
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.contacts {
+    padding-top: 10px;
+    padding-left: 7%;
+}
+
+.grid_footer {
+    display: grid;
+    grid-template-columns: [one] 1.6fr [two] 0.7fr [three] 0.7fr;
+    grid-template-rows: [row1] 1fr [row2] 100px;
+    gap: 8px;
+    grid-auto-flow: dense;
+}
+
+.grid_footer img {
+    width: calc(3% + 40px);
+    padding-bottom: 10px;
+    padding-right: 5%;
+    transition: all 0.5s ease;
+}
+
+.grid_footer h2 {
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.grid_footer a {
+    line-height: 1.4;
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: all 0.5s ease;
+}
+
+.social {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    transition: all 0.5s ease;
+}
+
+.links {
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all 0.5s ease;
+}
+
+.shop {
+    padding: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all 0.5s ease;
+}
+
+.about:hover {
+    transform: scale(106%);
+    transition: all 0.5s ease;
+}
+
+.social img:hover {
+    transform: scale(130%);
+    transition: all 0.5s ease;
+}
+
+.links:hover {
+    transform: scale(106%);
+    transition: all 0.5s ease;
+}
+
+.shop:hover {
+    transform: scale(106%);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid_footer {
+        grid-template-columns: [one] 1fr;
+        grid-template-rows: [row1] 0.5fr [row2] 100px [row3] 0.5fr [row4] 0.5fr;
+    }
+    .about {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .social {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .links {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .shop {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}

@@ -1,0 +1,58 @@
+/* FOOTER */
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    font-size: calc(1rem + 0.5vw);
+    padding-bottom: 0.5%;
+    width: 100%;
+}
+
+.hr-white {
+    height: 0;
+    border: none;
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.made_by {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.social {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.social img {
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
+    z-index: 3;
+}
+
+.social::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(53, 53, 53);
+    transition: 0.7s;
+}
+
+.social:hover:before {
+    transform: translateY(80px)
+}

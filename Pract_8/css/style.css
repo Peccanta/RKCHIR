@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN */
+
+
+/* Для ширины 1000 пикселей и меньше */
+
+@media screen and (max-width: 1000px) {
+    main {
+        font-size: calc(24px - 20%) !important;
+    }
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-size: 24px;
+    padding-top: calc(5% + 70px);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* CONTENT */
+
+.content {
+    font-size: calc(100% + 50px);
+    height: calc(30vh + 1500px);
+    font-size: 20px;
+}
+
+
+/* grid  */
+
+.grid {
+    display: grid;
+    grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [four] 1fr;
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr;
+    gap: 8px;
+    text-align: center;
+    grid-auto-flow: dense;
+    max-height: 300px
+}
+
+.grid img {
+    width: calc(10% + 40px);
+    padding-bottom: 10px;
+}
+
+.item1 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: all 0.5s ease;
+}
+
+.item2 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all 0.5s ease;
+}
+
+.item2 img {
+    padding-top: 130px;
+}
+
+.item3 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: all 0.5s ease;
+}
+
+.item4 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    transition: all 0.5s ease;
+}
+
+.item5 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    transition: all 0.5s ease;
+}
+
+.item6 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    transition: all 0.5s ease;
+}
+
+.item5 img {
+    padding-top: 150px;
+}
+
+.item7 {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    transition: all 0.5s ease;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover,
+.item6:hover,
+.item7:hover {
+    background-color: rgb(252, 122, 35);
+    transition: all 0.5s ease;
+    transform: scale(102%);
+}

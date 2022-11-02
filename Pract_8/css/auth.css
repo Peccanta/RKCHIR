@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN */
+
+
+/* Для ширины 1000 пикселей и меньше */
+
+@media screen and (max-width: 1000px) {
+    main {
+        font-size: calc(24px - 20%) !important;
+    }
+    .gallery img {
+        max-width: 600px !important;
+        max-height: 400px !important;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .gallery img {
+        max-width: 100% !important;
+        max-height: 300px !important;
+    }
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-size: 24px;
+    padding-top: calc(5% + 70px);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* CONTENT */
+
+.content {
+    font-size: calc(100% + 50px);
+    height: 600px;
+    font-size: 20px;
+}
+
+
+/* grid_auth  */
+
+h2 {
+    margin-left: calc(40% - 90px);
+    margin-bottom: 20px;
+}
+
+button {
+    margin-left: calc(40% - 90px);
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: aqua;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [one] 1fr [two] 1fr;
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr;
+    gap: 20px;
+    column-gap: 40px;
+    width: 550px;
+    margin-left: calc(40% - 90px);
+}
+
+.text-area {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid input {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid aqua;
+    background-color: rgb(31, 31, 31);
+    color: gray;
+    transition: all 0.5s ease;
+    padding-left: 4px;
+}
+
+.grid input:focus {
+    background-color: aqua;
+    transition: all 0.5s ease;
+    transform: scale(108%);
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: [one] 1fr !important;
+        grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5] 1fr !important;
+        width: 320px !important;
+        margin-left: calc(30% - 90px) !important;
+    }
+    .name {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .suname {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .email {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .phone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .text-area {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    h2 {
+        margin-left: calc(30% - 90px) !important;
+    }
+    button {
+        margin-left: calc(30% - 90px) !important;
+    }
+}
