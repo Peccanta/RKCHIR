@@ -1,0 +1,188 @@
+/* HEADER */
+
+
+/* Для ширины 1000 пикселей и меньше */
+
+@media screen and (max-width: 1000px) {
+    header {
+        display: inline-block;
+    }
+    header img {
+        float: none !important;
+        padding-left: 0px !important;
+        position: relative !important;
+        margin-top: 0 !important;
+        margin-left: 3%;
+        width: 180px !important;
+    }
+    header .main_nav {
+        visibility: hidden;
+        position: absolute;
+    }
+    header h1 {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+/* Для ширины 1000 пикселей и больше */
+
+@media screen and (min-width: 1001px) {
+    .hamburger {
+        visibility: hidden;
+    }
+}
+
+header {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    background-color: rgb(53, 53, 53);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header img {
+    float: left;
+    width: 200px;
+    padding-left: 2%;
+    margin-top: 0.4%;
+    position: absolute;
+}
+
+header h1 {
+    text-align: center;
+    font-size: calc(1rem + 1.2vw);
+}
+
+header .main_nav {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+header .main_nav a {
+    font-size: calc(1rem + 1vw);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0.3rem;
+}
+
+header .main_nav a:nth-child(1) {
+    padding-right: 2%;
+}
+
+header .main_nav a:last-child {
+    padding-left: 2%;
+}
+
+header .main_nav a:hover {
+    color: red;
+}
+
+
+/* Hamburger menu */
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    top: 3.6em;
+    right: 4%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 3em;
+    height: 45px;
+    z-index: 5;
+}
+
+.hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(53, 53, 53);
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.hidden_nav {
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.hidden_nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.hidden_nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: red;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.hidden_nav a:hover {
+    color: white;
+}
+
+.hidden_nav a:hover:before {
+    height: 100%;
+}
+
+#toggle:checked+.hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#toggle:checked+.hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+}
+
+#toggle:checked+.hamburger+.nav {
+    top: 0;
+    transform: scale(1);
+}
