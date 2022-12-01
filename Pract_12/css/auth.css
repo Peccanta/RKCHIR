@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN */
+
+
+/* Для ширины 1000 пикселей и меньше */
+
+@media screen and (max-width: 1000px) {
+    main {
+        font-size: calc(24px - 20%) !important;
+    }
+    .gallery img {
+        max-width: 600px !important;
+        max-height: 400px !important;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .gallery img {
+        max-width: 100% !important;
+        max-height: 300px !important;
+    }
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-size: 24px;
+    padding-top: calc(5% + 70px);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+
+/* CONTENT */
+
+.content {
+    font-size: calc(100% + 50px);
+    height: 600px;
+    font-size: 20px;
+}
+
+
+/* form_auth_glassmorphism  */
+
+.glassmorphism {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.glassmorphism .glassmorphism_box {
+    position: relative;
+    width: 400px;
+    height: 364px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+/* fly1 */
+
+.glassmorphism .glassmorphism_box .fly1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.glassmorphism .glassmorphism_box .fly1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate1 3s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.glassmorphism .glassmorphism_box:hover .fly1::before {
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.glassmorphism .glassmorphism_box .fly1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate1 3s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    animation-delay: -1s;
+    ;
+}
+
+.glassmorphism .glassmorphism_box:hover .fly1::after {
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+
+/* fly2 */
+
+.glassmorphism .glassmorphism_box .fly2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.glassmorphism .glassmorphism_box .fly2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate2 1.5s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.glassmorphism .glassmorphism_box:hover .fly2::before {
+    top: -70px;
+    left: 350px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.glassmorphism .glassmorphism_box .fly2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate2 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    animation-delay: -1s;
+    ;
+}
+
+.glassmorphism .glassmorphism_box:hover .fly2::after {
+    bottom: -50px;
+    right: 350px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+@keyframes animate1 {
+    0%,
+    100% {
+        transform: translate(150px);
+    }
+    50% {
+        transform: translate(-50px);
+    }
+}
+
+@keyframes animate2 {
+    0%,
+    100% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translate(-15px);
+    }
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content {
+    position: relative;
+    left: 0;
+    padding: 22px 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content h2 {
+    font-size: 1.6em;
+    color: #fff;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content input {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.7em;
+    border-radius: 50px;
+    border: 0;
+    padding-left: 20px;
+    background-color: white(255, 255, 255, 0.658);
+    color: black;
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content a:hover {
+    background-color: #db4848;
+    color: whitesmoke;
+    box-shadow: 0 2px 30px rgba(1, 1, 1, 0.2);
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content p {
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    margin-left: 10px;
+}
+
+.glassmorphism .glassmorphism_box .glassmorphism_content p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

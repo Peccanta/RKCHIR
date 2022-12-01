@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <title>oKeyPlay</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://kit.fontawesome.com/f0b1877548.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="images/label.png" alt="Logo">
+        <h1>МАГАЗИН КОМПЬЮТЕРНЫХ ИГР</h1>
+        <br>
+        <nav class="main_nav">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="index.html">КАТАЛОГ</a>
+            <a href="auth.html">ВОЙТИ</a>
+        </nav>
+        <div class="menu">
+            <input id="toggle" type="checkbox"></input>
+            <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+        </label>
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav class="hidden_nav">
+                        <a href="index.html">ГЛАВНАЯ</a><br>
+                        <a href="index.html">КАТАЛОГ</a><br>
+                        <a href="auth.html">ВОЙТИ</a><br>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTENT -->
+
+        <section class="links">
+            <h4>Ссылки на внешние ресурсы разного цвета</h4>
+            <div class="links-block">
+                <div class="link"><a href="https://www.youtube.com/">YouTube</a></div>
+                <div class="link"><a href="https://vk.com/">Вконтакте</a></div>
+                <div class="link"><a href="https://ya.ru/">Яндекс</a></div>
+            </div>
+        </section>
+
+        <section class="notif">
+            <h4>Появляющееся и исчезающее уведомление</h4>
+        </section>
+
+        <section class="center-picture">
+            <h4>Область с картинкой</h4>
+            <div class="area">
+                <img src="images/steam.png" alt="chicken" width="100px" height="100px">
+            </div>
+            <div class="where-click">
+                <p>Координаты нажатия мыши:</p>
+                <p class="clickX">x = <span>?</span> px</p>
+                <p class="clickY">y = <span>?</span> px</p>
+            </div>
+        </section>
+
+        <section class="create-list">
+            <h4>Создание пользовательского списка</h4>
+        </section>
+
+        <section class="close-notif">
+            <h4>Возможность закрыть уведомления</h4>
+            <div class="notifs">
+                <button class="notif__btn" type="button">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="notif__counter"></div>
+                </button>
+                <div class="notif__inner">
+                </div>
+            </div>
+        </section>
+
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr class="hr-white">
+
+        <!-- CONTACTS -->
+        <div class="contacts">
+            <div class="grid_footer">
+                <div class="about">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto incidunt ex neque iure ipsa quam dolorum ad laboriosam ullam inventore, quisquam cum obcaecati accusamus recusandae ea. Quibusdam debitis mollitia in!</p>
+                </div>
+                <div class="social">
+                    <img src="images/vk.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                    <img src="images/telegram.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                </div>
+                <div class="links">
+                    <h2>Quick Links</h2>
+                    <a href="#">About</a><br>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Help</a><br>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <a href="#">Steam</a><br>
+                    <a href="#">Battle.net</a><br>
+                    <a href="#">Origin</a><br>
+                    <a href="#">EpicStore</a><br>
+                    <a href="#">UPlay</a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
