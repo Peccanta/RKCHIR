@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const notifInner = notif.querySelector('.notif__inner');
     const notifCounter = notif.querySelector('.notif__counter');
     const notifArr = [
-        'Закрывающееся уведомление 1',
-        'Закрывающееся уведомление 2',
-        'Закрывающееся уведомление 3',
-        'Закрывающееся уведомление 4',
-        'Закрывающееся уведомление 5',
-        'Закрывающееся уведомление 6',
-        'Закрывающееся уведомление 7',
+        'Уведомление 1',
+        'Уведомление 2',
+        'Уведомление 3',
+        'Уведомление 4',
+        'Уведомление 5',
+        'Уведомление 6',
+        'Уведомление 7',
     ];
 
     let numberNotif = 0;
@@ -133,6 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
         notifCounter.textContent = counter;
 
     }
+
+    // Добавляем задержку появления новых уведомлений при нажатии
+    let timerId = setInterval(createNotif, 3000);
+    
+    notifBtn.addEventListener('click', () => {
+        clearInterval(timerId);
+        setTimeout(function() {
+            timerId = setInterval(createNotif, 3000);
+        }, 10000);
+    });
 
     // Добавляем событие при нажатии кнопки закрытия уведомления
     notifInner.onclick = function(event) {
