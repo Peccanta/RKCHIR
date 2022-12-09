@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <title>oKeyPlay</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://kit.fontawesome.com/f0b1877548.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="images/label.png" alt="Logo">
+        <h1>МАГАЗИН КОМПЬЮТЕРНЫХ ИГР</h1>
+        <br>
+        <nav class="main_nav">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="index.html">КАТАЛОГ</a>
+            <a href="auth.html">ВОЙТИ</a>
+        </nav>
+        <div class="menu">
+            <input id="toggle" type="checkbox"></input>
+            <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+        </label>
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav class="hidden_nav">
+                        <a href="index.html">ГЛАВНАЯ</a><br>
+                        <a href="index.html">КАТАЛОГ</a><br>
+                        <a href="auth.html">ВОЙТИ</a><br>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTENT -->
+
+        <div class="container">
+            <div id="contents" onclick="confirmRedirect(event)" class="first">
+                <a href="https://vk.com"><span><span>VK</span></span></a>
+                <a href="https://www.youtube.com">YOUTUBE</a>
+                <a href="https://www.twitch.tv/">TWITCH</a>
+            </div>
+
+            <div class="gallery">
+                <div id="main_image" class="main_image"><img></div>
+                <div class="images_list" onclick="changeMainImage(event)">
+                    <img src="images/1.jpg">
+                    <img src="images/2.jpg">
+                    <img src="images/3.jpg">
+                    <img src="images/4.jpg">
+                </div>
+            </div>
+
+            <div class="third">
+                <ul onclick="selectElements(event)" id="list">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
+
+            <div class="forth">
+                <div id="slideContainer" class="slider">
+                    <span id="slide" class="slide">0</span>
+                </div>
+            </div>
+
+            <div class="fifth">
+                <div class="shop1">
+                    <div class="item"><img src="images/4.png">
+                        <span>FARCRY 5 DELUXE</span>
+                        <span class="cost">500₽</span>
+                    </div>
+                    <div class="item"><img src="images/5.jpg">
+                        <span>BATTLEFIELD 1</span>
+                        <span class="cost">2200₽</span>
+                    </div>
+                    <div class="item"><img src="images/6.jpg">
+                        <span>CIVILIZATION VI</span>
+                        <span class="cost">1150₽</span>
+                    </div>
+                </div>
+                <div id="kart" class="kart" onmouseover="placeable = true" onmouseout="placeable = false">
+                    <span id="totalCost" class="totalCost">0</span>
+                </div>
+            </div>
+
+            <div class="sixth">
+                <progress onclick="showAnim(this)" id="elem"></progress>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr class="hr-white">
+
+        <!-- CONTACTS -->
+        <div class="contacts">
+            <div class="grid_footer">
+                <div class="about">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto incidunt ex neque iure ipsa quam dolorum ad laboriosam ullam inventore, quisquam cum obcaecati accusamus recusandae ea. Quibusdam debitis mollitia in!</p>
+                </div>
+                <div class="social">
+                    <img src="images/vk.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                    <img src="images/telegram.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                </div>
+                <div class="links">
+                    <h2>Quick Links</h2>
+                    <a href="#">About</a><br>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Help</a><br>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <a href="#">Steam</a><br>
+                    <a href="#">Battle.net</a><br>
+                    <a href="#">Origin</a><br>
+                    <a href="#">EpicStore</a><br>
+                    <a href="#">UPlay</a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
