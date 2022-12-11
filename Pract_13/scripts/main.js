@@ -179,9 +179,10 @@ function animate({ timing, draw, duration }) {
     let start = performance.now();
     //Функция отрисовки "полоски загрузки"
     requestAnimationFrame(function animate(time) {
-        let timeFraction = (time - start) / duration;
+        let timeFraction = (time - start) / duration; // timeFraction имеет значения от 0 до 1
         if (timeFraction > 1) timeFraction = 1;
 
+        // Вычисление текущего состояния анимации
         let progress = timing(timeFraction);
 
         draw(progress); //Отрисовываем
